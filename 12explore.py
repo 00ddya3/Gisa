@@ -24,8 +24,8 @@ x_test['환불금액'].fillna(0, inplace=True)
 #범주형 변수 인코딩
 encoder = LabelEncoder()
 x_train['주구매상품'] = encoder.fit_transform(x_train['주구매상품'])
-x_train['주구매지점'] = encoder.fit_transform(x_train['주구매지점'])
 x_test['주구매상품'] = encoder.fit_transform(x_test['주구매상품'])
+x_train['주구매지점'] = encoder.fit_transform(x_train['주구매지점'])
 x_test['주구매지점'] = encoder.fit_transform(x_test['주구매지점'])
 #print(encoder.classes_)        #라벨 인코딩 변환결과
 
